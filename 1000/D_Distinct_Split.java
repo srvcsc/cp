@@ -14,29 +14,26 @@ public class D_Distinct_Split {
         for (char c : s.toCharArray()) {
             ++arr[c - 'a'];
         }
+        int right = 0;
+        for (var tp : arr) {
+            if (tp != 0) {
+                ++right;
+            }
+        }
         int ans = 0;
         int[] lt = new int[26];
+        int left = 0;
         for (char c : s.toCharArray()) {
             ++lt[c - 'a'];
             --arr[c - 'a'];
-            ans = Math.max(ans, sum(arr, lt));
+            if (lt[c - 'a'] == 1) {
+                ++left;
+            }
+            if (arr[c - 'a'] == 0) {
+                --right;
+            }
+            ans = Math.max(ans, left + right);
         }
         System.out.println(ans);
-    }
-
-    public static int sum(int[] left, int[] right) {
-        int t1 = 0;
-        for (var i : left) {
-            if (i != 0) {
-                ++t1;
-            }
-        }
-        int t2 = 0;
-        for (var i : right) {
-            if (i != 0) {
-                ++t2;
-            }
-        }
-        return t1 + t2;
     }
 }
