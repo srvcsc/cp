@@ -1,18 +1,21 @@
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;
 
 public class E_Special_Elements {
-    static Scanner cin = new  Scanner(System.in);
+    static Scanner cin = new Scanner(System.in);
+
     public static void main(String[] args) {
         int tc = 1;
         tc = cin.nextInt();
-        while (tc > 0) {srvkr(); --tc;}
+        while (tc > 0) {
+            srvkr();
+            --tc;
+        }
     }
 
     public static void srvkr() {
         int n = cin.nextInt();
-        int[] input = new  int[n];
+        int[] input = new int[n];
         for (int i = 0; i < n; ++i) {
             input[i] = cin.nextInt();
         }
@@ -21,7 +24,7 @@ public class E_Special_Elements {
             return;
         }
         int ans = 0;
-        HashSet<Integer> fd= new HashSet<>(), nfd = new HashSet<>();
+        HashSet<Integer> fd = new HashSet<>(), nfd = new HashSet<>();
         for (int i = 0; i < n; ++i) {
             if (fd.contains(input[i])) {
                 ++ans;
@@ -31,7 +34,7 @@ public class E_Special_Elements {
                 if (ise(input[i], input)) {
                     ++ans;
                     fd.add(input[i]);
-                } else  {
+                } else {
                     nfd.add(input[i]);
                 }
             }
