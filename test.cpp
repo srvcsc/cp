@@ -3,15 +3,19 @@ using namespace std;
 
 #define int long long
 #define MOD 1000000007
-#define 
+
 
 void read(vector<int>&);
 void write(vector<int>&);
+void write(int);
+
 
 
 void solve() {
     
 }
+
+
 
 int32_t main() {
     int tc = 1;
@@ -30,10 +34,17 @@ void read(vector<int>& v) {
 }
 
 void write(vector<int>& v) {
-    cout << "[";
+    cerr << "[";
     for (int i = 0; i < v.size(); ++i) {
-        cout << v[i] << (i + 1 == v.size() ? "" : ", ");
+        cerr << v[i] << (i + 1 == v.size() ? "" : ", ");
     }
-    cout << "]";
-    cout << endl;
+    cerr << "]";
+    cerr << endl;
 }
+
+
+void write(int a) {
+    cerr << "{ " <<  a << " }" << endl;
+}
+
+
