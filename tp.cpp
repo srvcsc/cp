@@ -35,7 +35,7 @@ void solve() {
 
 int main() {
     int tc = 1;
-    cin >> tc;
+    // cin >> tc;
     while (tc > 0) {
         solve();
         --tc;
