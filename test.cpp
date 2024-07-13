@@ -11,9 +11,9 @@
 
 using namespace std;
 
+#define endl '\n'
 #define wer(x) cerr << "{ " << #x << " : " << x << " }" << endl; 
 #define all(x) (x).begin(), (x).end()
-#define endl '\n'
 
 using u8 = uint8_t;
 using i8 = int8_t;
