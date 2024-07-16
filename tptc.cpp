@@ -12,7 +12,7 @@
 using namespace std;
 
 #define endl '\n'
-#define wer(x) cerr << "{ " << #x << " : " << x << " }" << endl; 
+#define sv(a) cerr << "{" << __LINE__ << ": " << #a << " = " << a << "}" << '\n';
 #define all(x) (x).begin(), (x).end()
 
 using u8 = uint8_t;
