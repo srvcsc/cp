@@ -15,11 +15,8 @@ using namespace std;
 #define MOD 1000000007
 #define repf(i, a, b) for (int i = (a); i < (b); ++(i))
 #define repb(i, a, b) for (int i = (a); i > (b); --(i))
-#if defined(__srvkr)
-#define sv(a) cerr << "{" << __LINE__ << ": " << #a << " = " << a << "}" << '\n';
-#else
-#define sv(a) ;
-#endif
+#define sv(a) cerr << "{ " << __LINE__ << ": " << #a << " = " << a << " }" << '\n';
+
 
 using u8 = uint8_t;
 using i8 = int8_t;
@@ -66,7 +63,8 @@ template <typename T, typename... Types> void scs(T &a1, Types &...args)
 }
 
 void print()
-{
+{   
+    cerr << endl;
 }
 template <typename T, typename... Types> void print(T a, Types... args)
 {
@@ -99,7 +97,8 @@ void solve()
     str s = "saurav";
     char c = 'c';
     const char *ch = "const char";
-    print(a, d, s, c, ch, "i am last");
+    // print(a, d, s, c, ch, "i am last");
+    sv(a)sv(d)sv(s)sv(c)sv(ch)
 }
 
 int main()
