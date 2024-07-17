@@ -1,114 +1,50 @@
-#include <algorithm>
-#include <bitset>
-#include <cstdint>
 #include <iostream>
+#include <vector>
+#include <cstdint>
+#include <string>
+#include <algorithm>
 #include <map>
 #include <set>
-#include <string>
 #include <utility>
-#include <vector>
+#include <bitset>
+
 
 using namespace std;
 
-#define endl '\n'
 #define all(x) (x).begin(), (x).end()
-#define MOD 1000000007
-#define repf(i, a, b) for (int i = (a); i < (b); ++(i))
-#define repb(i, a, b) for (int i = (a); i > (b); --(i))
+#define endl '\n'
 #define sv(a) cerr << "{ " << __LINE__ << ": " << #a << " = " << a << " }" << '\n';
 
 
 using u8 = uint8_t;
 using i8 = int8_t;
-using u16 = uint16_t;
-using i16 = int16_t;
-using u32 = uint32_t;
-using u64 = uint64_t;
-using i64 = int64_t;
+using ush = uint16_t;
+using ish = int16_t;
+using uint = uint32_t;
+using ull = uint64_t;
+using ill = int64_t;
 using str = string;
 
-/****************************************************************************************************
- */
-/*************************************************************************************************
- */
 
-template <typename T> using vt = vector<T>;
+#define MOD 1000000007
 
-template <typename T> void readv(vt<T> &v)
-{
-    for (auto &i : v)
-    {
-        cin >> i;
-    }
+
+
+void solve() {
+    
 }
 
-template <typename T> void printv(vt<T> &v)
-{
-    cerr << "[";
-    int n = v.size();
-    repf(i, 0, n)
-    {
-        cerr << v[i] << (i == n - 1 ? "" : ", ");
-    }
-    cerr << "]" << endl;
-}
 
-void scs()
-{
-}
-template <typename T, typename... Types> void scs(T &a1, Types &...args)
-{
-    cin >> a1;
-    scs(args...);
-}
 
-void print()
-{   
-    cerr << endl;
-}
-template <typename T, typename... Types> void print(T a, Types... args)
-{
-    cerr << "\"" << a << "\"" << " ";
-    print(args...);
-}
-
-template <typename T> T bexp(T a, T b)
-{
-    T res = 1;
-    while (b > 0)
-    {
-        if (b & 1)
-            res *= a;
-        a *= a;
-        b >>= 1;
-    }
-    return res;
-}
-
-/**********************************************************************************************
- */
-/************************************************************************************************
- */
-
-void solve()
-{
-    int a = 32;
-    double d = 3.234;
-    str s = "saurav";
-    char c = 'c';
-    const char *ch = "const char";
-    // print(a, d, s, c, ch, "i am last");
-    sv(a)sv(d)sv(s)sv(c)sv(ch)
-}
-
-int main()
-{
+int main() {
     int tc = 1;
     // cin >> tc;
-    while (tc > 0)
-    {
+    while (tc > 0) {
         solve();
         --tc;
     }
     return 0;
 }
+
+
+

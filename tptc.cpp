@@ -11,25 +11,27 @@
 
 using namespace std;
 
-#define endl '\n'
-#define sv(a) cerr << "{" << __LINE__ << ": " << #a << " = " << a << "}" << '\n';
 #define all(x) (x).begin(), (x).end()
+#define endl '\n'
+#define sv(a) cerr << "{ " << __LINE__ << ": " << #a << " = " << a << " }" << '\n';
+
 
 using u8 = uint8_t;
 using i8 = int8_t;
-using u16 = uint16_t;
-using i16 = int16_t;
-using u32 = uint32_t;
-using u64 = uint64_t;
-using i64 = int64_t;
+using ush = uint16_t;
+using ish = int16_t;
+using uint = uint32_t;
+using ull = uint64_t;
+using ill = int64_t;
 using str = string;
+
 
 #define MOD 1000000007
 
 
 
 void solve() {
-   
+    
 }
 
 
