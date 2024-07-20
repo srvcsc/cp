@@ -7,6 +7,8 @@
 #include <string>
 #include <utility>
 #include <vector>
+#include <deque>
+#include <queue>
 
 using namespace std;
 
@@ -23,6 +25,11 @@ using uint = uint32_t;
 using ull = uint64_t;
 using ill = int64_t;
 using str = string;
+
+
+template <typename T>using vt = vector<T>;
+template <typename T>using dq = deque<T>;
+template <typename T>using qu = queue<T>;
 
 ill bexp(ill a, ill b);
 ill bmexp(ill a, ill b, ill mod);
