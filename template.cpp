@@ -7,6 +7,7 @@
 #include <set>
 #include <utility>
 #include <bitset>
+#include <array>
 
 
 using namespace std;
