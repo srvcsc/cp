@@ -13,10 +13,15 @@ using namespace std;
 
 #define all(x) (x).begin(), (x).end()
 #define endl '\n'
+#define maxe *max_element
+#define mine *min_element
+#define lb lower_bound
+#define ub upper_bound
 
 #if defined(LOCAL)
 #define sv(a) cerr << "{ " << __LINE__ << ": " << #a << " = " << a << " }" << '\n';
-#else sv(a)
+#else 
+#define sv(a)
 #endif
 
 using u8 = uint8_t;
@@ -34,7 +39,7 @@ using str = string;
 
 
 void solve() {
-    
+   
 }
 
 
