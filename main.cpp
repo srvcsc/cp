@@ -13,11 +13,8 @@ using namespace std;
 
 #define all(x) (x).begin(), (x).end()
 #define endl '\n'
-
-#if defined(LOCAL)
 #define sv(a) cerr << "{ " << __LINE__ << ": " << #a << " = " << a << " }" << '\n';
-#else sv(a)
-#endif
+
 
 using u8 = uint8_t;
 using i8 = int8_t;
@@ -30,8 +27,6 @@ using str = string;
 
 
 #define MOD 1000000007
-
-
 
 
 
@@ -52,3 +47,6 @@ int main() {
     }
     return 0;
 }
+
+
+
