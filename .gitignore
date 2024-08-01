@@ -1,2 +1,6 @@
 .cph
 Problems
+*.exe
+main.cpp
+test.cpp
+Makefile
