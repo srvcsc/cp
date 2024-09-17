@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
 
 #define all(x) (x).begin(), (x).end()
 #define endl '\n'
@@ -23,7 +26,8 @@ using ll = int64_t;
 using ld = long double;
 using str = string;
 
-template <typename T> using vt = vector<T>;
+template <typename T>
+using vt = vector<T>;
 using pll = pair<ll, ll>;
 using mll = map<ll, ll>;
 using vvll = vector<vector<ll>>;
@@ -32,10 +36,15 @@ using sll = set<ll>;
 using lll = list<ll>;
 using qll = queue<ll>;
 using dqll = deque<ll>;
-template <size_t _n> using ary = array<ll, _n>;
+template <size_t _n>
+using ary = array<ll, _n>;
 using vll = vector<ll>;
 
-template <typename T> void readv(vector<T> &v)
+template <typename T>
+using oset = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+
+template <typename T>
+void readv(vector<T> &v)
 {
     for (auto &i : v)
         cin >> i;
@@ -43,7 +52,8 @@ template <typename T> void readv(vector<T> &v)
 void scs()
 {
 }
-template <typename T, typename... Types> void scs(T &arg, Types &...args)
+template <typename T, typename... Types>
+void scs(T &arg, Types &...args)
 {
     cin >> arg;
     scs(args...);
@@ -51,7 +61,7 @@ template <typename T, typename... Types> void scs(T &arg, Types &...args)
 
 void solve()
 {
-    
+    $0
 }
 
 int main()
